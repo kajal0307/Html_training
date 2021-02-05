@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+$bg-color: red;
+@mixin common {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+
+}
+main{
+    @include common();
+    width: 100%;
+    height: 20px;
+    display: flex;
+
+.row{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    background-color: red;
+    margin-bottom: 90px;
+&__col-1-of-2{
+    @include common();
+    width: 50%;
+    background-color: $bg-color;
+    
+&__col-1-of-3{
+
+    @include common();
+
+    background-color: $bg-color;
+}
+}
+}
+}
